@@ -6,6 +6,7 @@
 
 const char kWindowTitle[] = "LE2D_02_アオヤギ_ガクト_確認課題";
 
+
 #ifndef M_PI
 #define M_PI 3.14159265358979323846f
 #endif
