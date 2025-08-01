@@ -266,7 +266,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
     char keys[256] = { 0 };
     char preKeys[256] = { 0 };
 
-    // カメラは真正面に
+    // カメラ
     Vector3 cameraTranslate { 0.0f, -4.0f, -20.0f };
     Vector3 cameraRotate { -0.2f, 0.0f, 0.0f };
 
