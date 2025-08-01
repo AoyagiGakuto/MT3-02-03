@@ -273,12 +273,12 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
     // 線分初期値
     Segment seg = {
         { -1.0f, 2.0f, 0.0f }, // 始点
-        { 1.0f, -1.0f, 0.0f } // 終点
+        { 1.0f, -0.3f, 0.0f } // 終点
     };
 
     // 平面初期値
     Plane plane;
-    plane.point = { 0.0f, 0.0f, 0.0f };
+    plane.point = { 0.0f, -0.5f, 0.0f };
     plane.normal = { 0.0f, 1.0f, 0.0f };
 
     Matrix4x4 viewportMatrix = MakeViewportForMatrix(
