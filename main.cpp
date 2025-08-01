@@ -333,13 +333,6 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
         // 線分
         DrawSegment(seg, viewProjectionMatrix, viewportMatrix, isHit ? RED : WHITE);
 
-        // 交点があるなら黄色い点で描画
-        if (isHit) {
-            Vector3 hp = Transform(hitPoint, viewProjectionMatrix);
-            hp = Transform(hp, viewportMatrix);
-            Novice::DrawEllipse((int)hp.x, (int)hp.y, 5, 5, 0.0f, BLACK, kFillModeSolid);
-        }
-
         ///
         /// ↑描画処理ここまで
         ///
